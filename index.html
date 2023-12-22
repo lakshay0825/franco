@@ -5,9 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Franco Masoma</title>
 
+        <!-- CSS files -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/owl-carousel.css">
+        <link rel="stylesheet" type="text/css" href="css/media.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
 
@@ -31,7 +35,7 @@
                     </ul>
                 </div>
             </div>
-            <menu>
+            <menu class="d-none d-md-block">
                 <div class="container">
                     <ul class="d-flex justify-content-between align-items-center">
                         <li>
@@ -44,8 +48,8 @@
                             <a href="#" class="text-uppercase">WEDDINGS</a>
                         </li>
                         <li>
-                            <a href="#" class="text-uppercase">
-                                <img src="images/logo.png" alt="Logo" title="" />
+                            <a href="#">
+                                <img src="images/logo.png" alt="Logo" title="" class="logo" />
                             </a>
                         </li>
                         <li>
@@ -60,7 +64,36 @@
                     </ul>
                 </div>
             </menu>
-        </header>
+            <section class="mob_menu d-flex d-md-none p-4 align-items-center justify-content-between">
+                <a href="#">
+                    <img src="images/logo.png" alt="Logo" title="" class="logo" />
+                </a>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="text-uppercase">LOOKBOOK</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-uppercase">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-uppercase">WEDDINGS</a>
+                    </li>                   
+                    <li>
+                        <a href="#" class="text-uppercase">OUR STORY</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-uppercase">VISIT US</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-uppercase">CONTACT</a>
+                    </li>
+                </ul>
+            </section>
+        </header> 
 
         <!-- Banner Section -->
         <section class="banner_section">
@@ -68,11 +101,11 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <h1 class="text-light">The world of Franco Masoma</h1>
-                        <div class="pt-5 mt-5">
-                            <button class="button mx-4">
+                        <div class="pt-5 mt-0 mt-md-5">
+                            <button class="button mx-4 my-2">
                                 See Collection
                             </button>
-                            <button class="button mx-4">
+                            <button class="button mx-4 my-2">
                                 Book Appointment
                             </button>
                         </div>
@@ -90,10 +123,10 @@
                             <h3 class="min_heading text-light">
                                 Timeless Italian tailoring meets California flair.
                             </h3>
-                            <p class="text-light py-5">
+                            <p class="text-light py-4 py-lg-5">
                                 Franco Masoma tailors for today's professional, ensuring you dazzle on your wedding, impress in the office, unwind stylishly on beach holidays, or celebrate with friends. Our commitment to quality fabrics, meticulous fit, and bespoke service transforms each piece into more than just clothing – your personalized statement of elegance and comfort.
                             </p>
-                            <button class="button mt-3">
+                            <button class="button mt-3 mb-5 mb-md-0">
                                 Meet Franco
                             </button>
                         </div>
@@ -127,7 +160,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h3 class="min_heading text-light">Shop Custom</h3>
-                            <ul class="pt-5 mt-2 pb-4">
+                            <ul class="pt-3 pt-md-5 mt-2 pb-4">
                                 <li>
                                     <a href="#">Suits</a>
                                 </li>
@@ -158,11 +191,11 @@
                         <h2 class="sub_heading text-dark text-center">Get Started</h2>
                     </div>
                 </div>
-                <div class="row row-cols-md-3 gx-5">
-                    <div class="col">
+                <div class="row row-cols-md-3 gx-4 gx-lg-5">
+                    <div class="col-12">
                         <div class="getBox text-center">
                             <img src="images/get_img1.png" class="w-100" />
-                            <div class="px-5">
+                            <div class="px-2 px-lg-5">
                                 <h5 class="text-dark mt-3">Weddings</h5>
                                 <p class="text-dark pt-2 pb-4">
                                     Make a statement at any wedding, whether you’re the groom, best man, or party crasher.
@@ -170,10 +203,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="getBox text-center">
+                    <div class="col-12">
+                        <div class="getBox text-center my-5 my-md-0">
                             <img src="images/get_img2.png" class="w-100" />
-                            <div class="px-5">
+                            <div class="px-2 px-lg-5">
                                 <h5 class="text-dark mt-3">Brand New Look</h5>
                                 <p class="text-dark pt-2 pb-4">
                                     Whether you’re the groom, best man, or wedding crasher, get a look that makes a statement. 
@@ -181,10 +214,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12">
                         <div class="getBox text-center">
                             <img src="images/get_img3.png" class="w-100" />
-                            <div class="px-5">
+                            <div class="px-2 px-lg-5">
                                 <h5 class="text-dark mt-3">Milestone</h5>
                                 <p class="text-dark pt-2 pb-4">
                                     Whether you’re the groom, best man, or wedding crasher, get a look that makes a statement. 
@@ -201,7 +234,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="sub_heading text-dark text-center pb-5">Reviews</h2>
+                        <h2 class="sub_heading text-dark text-center pb-4 pb-md-5">Reviews</h2>
                         <div class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="review_content m-auto">
@@ -233,13 +266,106 @@
                 
             </div>
         </section>
+ 
+        <!-- Our Store Section -->
+        <section class="ourstore_section d-flex flex-wrap">
+            <div class="store_left">
+                <img src="images/store_img.png" class="mw-100">
+            </div>
+            <div class="store_right d-flex justify-content-center align-items-center">
+                <div class="store_content text-center">
+                    <h2 class="sub_heading text-light">Visit our store</h2>
+                    <p class="text-light pt-4 pt-lg-5 pb-2">45 N Santa Cruz Ave <br/> Los Gatos, CA, 95030</p>
+                    <button class="button mt-3">
+                        Book Appointment
+                    </button>
+                    <p class="text-light pt-4">Virtual Consultations over video also available</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="sub_heading text-light text-center">Join our community newsletter</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-sm-start">
+                        <h2 class="text-light text-uppercase">FRANCO MASOMA</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-6 col-sm-3 text-center text-sm-start">
+                                <h4 class="text-uppercase text-light mb-4 mt-5 pt-4">Company</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center text-sm-start">
+                                <h4 class="text-uppercase text-light mb-4 mt-5 pt-4">Support</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Press</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer_social col-12 col-sm-6 text-center">
+                                <h4 class="text-uppercase text-light mb-4 mt-0 mt-md-5 pt-4">Social</h4>
+                                <ul class="d-flex justify-content-center">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/fb_icon.png" />
+                                        </a>
+                                    </li>
+                                    <li class="mx-4 px-3">
+                                        <a href="#">
+                                            <img src="images/insta_icon.png" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/linkedin_icon.png" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row mt-0 mt-md-5 pt-5">
+                    <div class="col-12 text-center">
+                        <p class="copy_right text-light">© <span id="year"></span> Franco Masoma All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
-
+        <!-- Script files -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/owl-carousel.js"></script>
 
+
+        <!-- Carousel Script -->
         <script>
             $('.owl-carousel').owlCarousel({
                 loop:true,
@@ -257,6 +383,12 @@
                     }
                 }
             })
+
+            // Copy right script
+            var d = new Date();
+            var n = d.getFullYear();
+            document.getElementById("year").innerHTML = n;
+                  
         </script>
     </body>
 </html>
